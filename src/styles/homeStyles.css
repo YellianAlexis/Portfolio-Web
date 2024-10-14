@@ -1,0 +1,190 @@
+*:has(div.homeBody) {
+    box-sizing: border-box;
+}
+
+body:has(div.homeBody) {
+    overflow: hidden;
+    background-image: radial-gradient(circle, #ececec 10%, #d1d1d1 40%, #a7a7a7 70%);
+}
+
+.homeBody .textDesigner,
+.homeBody .textDeveloper {
+    display: inline-block;
+}
+
+.homeBody .textDesigner h1,
+.homeBody .textDeveloper h1 {
+    margin: 0;
+}
+
+.homeBody .text {
+    position: absolute;
+    width: auto;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    top: 40%;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Casta" !important;
+}
+
+.homeBody #text1 {
+    left: 10px;
+    color: #000;
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.homeBody #text2 {
+    right: 10px;
+    color: #000;
+    text-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    text-align: right;
+}
+
+
+.homeBody .arrows {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px; /* Tamaño de la flecha */
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Suaviza el movimiento y efectos */
+    z-index: 5; /* Asegura que la flecha esté sobre otros elementos */
+    opacity: 0; /* Empieza invisible */
+}
+
+/* Estilo al pasar el mouse por encima */
+.homeBody .arrows:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* Flecha izquierda */
+.homeBody .arrowLeft {
+    margin-right: 10px; /* Espacio entre la flecha y el texto */
+    color: #FC703C;
+}
+
+/* Flecha derecha */
+.homeBody .arrowRight {
+    margin-left: 10px; /* Espacio entre la flecha y el texto */
+    color: #8D5499;
+}
+
+/* BOTONES */
+
+/* Contenedor de los botones */
+.homeBody .botones {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between; /* Distribuye los botones en los extremos */
+    align-items: center;
+}
+
+/* Posicionar el botón de contacto en la esquina inferior izquierda */
+.homeBody .btn_contact {
+    margin-left: 5em; /* Espaciado desde el borde izquierdo */
+}
+
+/* Posicionar el botón sobre "about" en la esquina inferior derecha */
+.homeBody .btn_about {
+    margin-right: 5em; /* Espaciado desde el borde derecho */
+}
+
+/* Estilo de los botones */
+.homeBody .btn_contact,
+.homeBody .btn_about {
+    display: flex;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5%;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 130px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.homeBody .btn_contact {
+    background-color: #c1c1c1;
+    color: #FC703C;
+
+}
+
+.homeBody .btn_about {
+    background-color: #c1c1c1;
+    color: #8D5499;
+}
+
+.homeBody .btn_contact span,
+.homeBody .btn_about span {
+    z-index: 1;
+}
+
+.homeBody .btn_contact::before,
+.homeBody .btn_about::before{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    animation: spin 2s linear infinite;
+}
+
+.homeBody .btn_contact::before {
+    background-image: conic-gradient(#FFA175 0deg, transparent 120deg);
+}
+
+.homeBody .btn_about::before {
+    background-image: conic-gradient(#8D5499 0deg, transparent 120deg);
+}
+
+.homeBody .btn_contact::after,
+.homeBody .btn_about::after {
+    content: "";
+    position: absolute;
+    height: 42px;
+    width: 122px;
+    border-radius: 5%;
+}
+
+.homeBody .btn_contact::after {
+    background-color: #c1c1c1;
+
+}
+
+.homeBody .btn_about::after {
+    background-color: #c1c1c1;
+
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}

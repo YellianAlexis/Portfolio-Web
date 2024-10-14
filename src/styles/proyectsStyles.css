@@ -1,0 +1,75 @@
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-container .project-card {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 615px;
+    overflow: hidden;
+}
+
+.project-container .project-card .project-content {
+    padding: 2%;
+    align-content: center;
+    width: 50%;
+}
+
+.project-container .project-card .project-img {
+    text-align: end;
+    width: 50%;
+}
+
+.project-container .project-card .image {
+    height: 615px;
+}
+
+.project-container .project-card .project-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.project-container .project-card .btn-read-more {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.project-container .project-card .btn-back {
+    background-color: #FC703C;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project-container .project-card .btn-prev,
+.project-container .project-card .btn-next {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.project-container .project-card .btn-prev {
+    position: relative;
+    left: 12%;
+}
+
+.project-container .project-card .btn-back:hover {
+    background-color: #e76536;
+}
+
+.project-container .project-card .btn-prev:hover,
+.project-container .project-card .btn-next:hover {
+    background-color: #0056b3;
+}

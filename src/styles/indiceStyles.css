@@ -1,0 +1,124 @@
+.indice-container {
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  width: 100vw; /* Ocupa toda la anchura de la pantalla */
+  padding: 20px;
+}
+
+body:has(.indice-container.dark) {
+  background-color: #121212;
+  color: #fff;
+}
+
+body:has(.indice-container.light) {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Título del Menú */
+.indice-container .indice-title {
+  position: absolute;
+  left: 3.5%;
+  top: 15%;
+}
+
+.indice-container .indice-title p {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 1.5em;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+/* Lista de diseño */
+.indice-container .row {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+}
+
+.indice-container .row .col .list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.indice-container .row .col .list .list-item {
+  width: 50%;
+  margin: 10px 0; /* Usa margen en CSS en lugar de inline */
+  opacity: 0;
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
+}
+
+.indice-container .row .col .list .list-item:nth-child(odd) {
+  text-align: end;
+  align-self: flex-start; /* Elementos impares a la izquierda */
+  transform: translateX(20px); /* Comienza desplazado a la izquierda */
+}
+
+.indice-container .row .col .list .list-item:nth-child(even) {
+  text-align: start;
+  align-self: flex-end; /* Elementos pares a la derecha */
+  transform: translateX(-20px); /* Comienza desplazado a la izquierda */
+}
+
+.indice-container .row .col .list .list-item.show {
+  opacity: 1; /* Cambia a opacidad 1 */
+  transform: translateX(0); /* Vuelve a la posición original */
+}
+
+.indice-container .row .col .list .list-item h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: -0.1em;
+}
+
+.indice-container .row .col .list .list-item h4 {
+  margin: 0;
+}
+
+.indice-container .row .col .list .list-item a {
+  text-decoration: none;
+  color: inherit;
+  width: max-content;
+  display: inline-block;
+}
+
+/* Estilos pop up */
+.popup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  font-size: 12px;
+}
+
+.popup-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.popup-card img {
+  border-radius: 5px 5px 0 0;
+}
+
+.popup-card h4 {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+
+.popup-card p {
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #333;
+}

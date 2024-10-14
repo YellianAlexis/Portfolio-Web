@@ -1,0 +1,33 @@
+/* Para el contenedor general */
+.container.skills {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    background-image: url("/public/img/fondoSkills.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-right: 50px;
+}
+
+.skills .btn-root .goHome,
+.skills .btn-root .goBack {
+    color: #8D5499;
+}
+
+.skills div:first-child {
+    z-index: 2;
+}
+
+#bg-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
