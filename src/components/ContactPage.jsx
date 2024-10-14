@@ -26,8 +26,8 @@ function ContactPage() {
   useEffect(() => {
     const link = document.createElement("link");
     link.rel = "preload";
-    // link.href = "/src/assets/img/animations/mobile-scene.splinecode";
-    link.href = "https://prod.spline.design/JNhaIwcPO9LR6neg/scene.splinecode";
+    link.href = "/img/mobile-scene.splinecode";
+    // link.href = "https://prod.spline.design/JNhaIwcPO9LR6neg/scene.splinecode";
     link.as = "fetch";
     link.crossOrigin = "anonymous"; // Agregar el atributo crossorigin
     document.head.appendChild(link);
@@ -168,7 +168,8 @@ function ContactPage() {
               {/* Renderiza el Spline solo si está precargado */}
               <Suspense fallback={<div>Cargando animación...</div>}>
                 {isSplineLoaded && (
-                  <Spline scene="https://prod.spline.design/JNhaIwcPO9LR6neg/scene.splinecode" />
+                  // <Spline scene="https://prod.spline.design/JNhaIwcPO9LR6neg/scene.splinecode" />
+                  <Spline scene = "/img/mobile-scene.splinecode"/>
                 )}
               </Suspense>
             </div>
@@ -178,7 +179,7 @@ function ContactPage() {
             <div className="QR">
               <span className="text">Escanéame!</span>
               <img
-                src="/public/img/qr_cv.jpeg"
+                src="/img/qr_cv.jpeg"
                 alt="Mi CV"
                 width={150}
                 height={150}

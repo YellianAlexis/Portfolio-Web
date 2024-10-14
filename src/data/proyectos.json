@@ -2,7 +2,7 @@
     "items": [
       {
         "id": 1,
-        "img": "/Public/img/rebranding.jpeg",
+        "img": "/img/rebranding.jpeg",
         "titulo": "REBRANDING",
         "resumen": "Actualización y cambios de la identidad de marca.",
         "contenido": ["El rebranding trata de una estrategia de marketing que consiste en recuperar el reconocimiento en el mercado o llegar a nuevos territorios a través de un cambio o rediseño de la identidad mejorando su posicionamiento.", 
@@ -13,7 +13,7 @@
       },
       {
         "id": 2,
-        "img": "/Public/img/tarjetas-de-visita.jpeg",
+        "img": "/img/tarjetas-de-visita.jpeg",
         "titulo": "TARJETAS DE VISITA",
         "resumen": "Diseño e impresión.",
         "contenido": ["Una tarjeta de visita es un documento que contiene información clave sobre una empresa, diseñado para facilitar el networking, promover la marca y establecer conexiones profesionales.",
@@ -25,7 +25,7 @@
       },
       {
         "id": 3,
-        "img": "/Public/img/redes-mdkasa.png",
+        "img": "/img/redes-mdkasa.png",
         "titulo": "MARKETING DIGITAL",
         "resumen": "Actualización de página web y gestión de RRSS.",
         "contenido": ["Como Community Manager, las funciones son esenciales para establecer y mantener una sólida presencia online. Entre sus tareas principales se encuentra la gestión de las redes sociales de la empresa, que implica la creación, edición y programación de publicaciones alineadas con la identidad de la marca y atractivas para la audiencia. Cada publicación se diseña cuidadosamente para cumplir con los objetivos de marketing y comunicación.",
@@ -37,7 +37,7 @@
       },
       {
         "id": 4,
-        "img": "/Public/img/vallas-publi.jpeg",
+        "img": "/img/vallas-publi.jpeg",
         "titulo": "VALLAS PUBLICITARIAS",
         "resumen": "Diseño e impresión para vallas y fachadas.",
         "contenido": ["Como diseñador gráfico, se abarca un proceso desde la creación del diseño inicial de la cartelería publicitaria, hasta la maquetación final, asegurando que cada pieza cumpla con las especificaciones técnicas necesarias para su posterior impresión. Las responsabilidades incluyen el diseño y maquetación de diversos elementos, como banners de anuncios, folletos, catálogos, dípticos y fachadas de locales comerciales.",
@@ -49,7 +49,7 @@
       },
       {
         "id": 5,
-        "img": "/Public/img/packaging.jpeg",
+        "img": "/img/packaging.jpeg",
         "titulo": "PACKAGING",
         "resumen": "Diseño para impresión.",
         "contenido": ["Una de las funciones claves que se desarrollan para obtener un buen packaging es crear un envase que no solo contenga y proteja el producto, sino que también lo transporte, identifique y diferencie en el mercado.",
@@ -61,7 +61,7 @@
       },
       {
         "id": 6,
-        "img": "/Public/img/freelance.jpg",
+        "img": "/img/freelance.jpg",
         "titulo": "FREELANCE",
         "resumen": "Fotografía y edición profesional.",
         "contenido": ["De manera autónoma, formo parte de todo el proceso de sesiones fotográficas, colaborando con el equipo creativo para desarrollar conceptos visuales y temáticos. Además, me ocupo de la dirección durante la sesión, proporcionando retroalimentación a los modelos y al equipo durante las sesiones.",
@@ -72,7 +72,7 @@
       },
       {
         "id": 7,
-        "img": "/Public/img/future-ia.jpg",
+        "img": "/img/future-ia.jpg",
         "titulo": "FUTUROS PROYECTOS",
         "resumen": "Comercio online y videojuegos.",
         "contenido": ["En este apartado me gustaría compartir mis ganas de aprender y aspiraciones futuras de desarrollar un comercio online utilizando WordPress y crear un videojuego a través de plataformas como Unreal Engine o Unity.",
@@ -84,7 +84,7 @@
       },
       {
         "id": 8,
-        "img": "/Public/img/ibericca_webHome.png",
+        "img": "/img/ibericca_webHome.png",
         "titulo": "01",
         "subtitulo": "FRESHCOMMERCE",
         "resumen": "Diseño y desarrollo web 2020.",
@@ -96,7 +96,7 @@
       },
       {
         "id": 9,
-        "img": "/Public/img/areh_webHome.png",
+        "img": "/img/areh_webHome.png",
         "titulo": "02",
         "subtitulo": "AREH",
         "resumen": "Diseño y desarrollo web 2021.",
@@ -108,7 +108,7 @@
       },
       {
         "id": 10,
-        "img": "/Public/img/dcm_webHome.png",
+        "img": "/img/dcm_webHome.png",
         "titulo": "03",
         "subtitulo": "DCM",
         "resumen": "Diseño y desarrollo web 2021.",
@@ -121,7 +121,7 @@
       },
       {
         "id": 11,
-        "img": "/Public/img/thc_webHome.png",
+        "img": "/img/thc_webHome.png",
         "titulo": "04",
         "subtitulo": "THC",
         "resumen": "Diseño y desarrollo web 2024.",
@@ -133,7 +133,7 @@
       },
       {
         "id": 12,
-        "img": "/Public/img/mdkasa_webHome.png",
+        "img": "/img/mdkasa_webHome.png",
         "titulo": "05",
         "subtitulo": "MDKASA",
         "resumen": "Diseño y desarrollo web 2024.",

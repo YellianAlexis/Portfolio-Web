@@ -21,7 +21,8 @@ function HomePage() {
     // Precargar el archivo de Spline
     const link = document.createElement("link");
     link.rel = "preload";
-    link.href = "https://prod.spline.design/yymhHFAN-Q0A1d6Q/scene.splinecode";
+    // link.href = "https://prod.spline.design/yymhHFAN-Q0A1d6Q/scene.splinecode";
+    link.href = "/img/emojis-scene.splinecode";
     link.as = "fetch"; // Se carga como un recurso para JavaScript
     link.crossOrigin = "anonymous"; // Agregar el atributo crossorigin
     document.head.appendChild(link);
@@ -123,7 +124,8 @@ function HomePage() {
       <abbr title="Emojis interactivos">
         <Suspense fallback={<div>Cargando animación...</div>}>
           {isSplineLoaded && (
-            <Spline scene="https://prod.spline.design/yymhHFAN-Q0A1d6Q/scene.splinecode" />
+            // <Spline scene="https://prod.spline.design/yymhHFAN-Q0A1d6Q/scene.splinecode" />
+            <Spline scene = "/img/emojis-scene.splinecode"/>
           )}
         </Suspense>
       </abbr>
