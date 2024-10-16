@@ -142,7 +142,7 @@ function HomePage() {
             <IoIosArrowBack />
           </Link>
           <div className="textDesigner">
-            <h1>DISEÑADOR</h1>
+            <h1>DISEÑO</h1>
             <p>Descubre un poco más acerca de mi creatividad.</p>
           </div>
         </div>
@@ -152,7 +152,7 @@ function HomePage() {
         </div>
         <div className="text col-lg-3" id="text2" ref={refText2}>
           <div className="textDeveloper">
-            <h1>DESARROLLADOR</h1>
+            <h1>DESARROLLO</h1>
             <p>Visita mis proyectos como desarrollador web.</p>
           </div>
           <Link
