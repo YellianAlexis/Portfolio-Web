@@ -124,7 +124,7 @@ function ContactPage() {
         <h1 className="mainName">Contáctame</h1>
         <div className="row">
           <div className="col-6">
-            <p className="text">¿Quieres trabajar conmigo?</p>
+            <p className="text">¿Trabajamos juntos?</p>
             <p className="datos">
               <span className="telefono">
                 <FaPhoneAlt /> +34 633 928 452
