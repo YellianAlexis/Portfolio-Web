@@ -1,0 +1,22 @@
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.light-mode .experience__container .MuiTimelineConnector-root {
+    background-color: var(--color-purple);
+}
+
+.dark-mode .experience__container .MuiTimelineConnector-root {
+    background-color: var(--color-neon-green);
+}
+
+.experience__content__cardTitle {
+    font-size: larger;
+}
+
+#experiencia .css-1sohoek-MuiTimelineItem-root:nth-of-type(even) .MuiTimelineContent-root {
+    text-align: left;
+}

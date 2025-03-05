@@ -1,0 +1,287 @@
+.hero__content {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.hero__profile {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+
+.hero__profile__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin-top: 1.5em;
+}
+
+.hero__profile__description__title {
+  display: none;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.light-mode .hero__profile__description__title {
+  color: #000;
+}
+
+.dark-mode .hero__profile__description__title {
+  color: #fff;
+}
+
+.hero__profile__description__caption {
+  font-family: "Monaco";
+  font-size: 3.5em;
+  margin: 0;
+  padding: 0 1em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.light-mode .hero__profile__description__caption {
+  color: var(--color-purple);
+}
+
+.dark-mode .hero__profile__description__caption {
+  color: var(--color-neon-green);
+}
+
+.hero__profile__description .typewriter {
+  text-align: center;
+  text-wrap-style: balance;
+  font-size: 1em;
+  margin: 0;
+  padding: 0 1em;
+}
+
+.hero__profile__description__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  justify-content: start;
+  align-items: center;
+}
+
+.hero__profile__description__social .relative {
+  font-size: 3em;
+}
+
+.light-mode .hero__profile__description__social .social-logo {
+  color: #000;
+}
+
+.dark-mode .hero__profile__description__social .social-logo {
+  color: #fff;
+}
+
+.light-mode .hero__profile__description__social .social-logo:hover {
+  color: var(--color-purple);
+}
+
+.dark-mode .hero__profile__description__social .social-logo:hover {
+  color: var(--color-neon-green);
+}
+
+/* GitHub */
+.hero__profile__description__social li:has(a[data-social="GitHub"]) {
+  --accent-color-github: #23262b; /* color para GitHub */
+  --accent-color: var(--accent-color-github);
+}
+
+/* LinkedIn */
+.hero__profile__description__social li:has(a[data-social="LinkedIn"]) {
+  --accent-color-linkedin: #126bc4; /* color para LinkedIn */
+  --accent-color: var(--accent-color-linkedin);
+}
+
+/* PDF */
+.hero__profile__description__social li:has(a[data-social="Descargar CV"]) {
+  --accent-color-pdf: #ff281d; /* color para PDF */
+  --accent-color: var(--accent-color-pdf);
+}
+
+/* Mail */
+.hero__profile__description__social a[data-social="yellian1999@gmail.com"] {
+  --accent-color-correo: #3b60c4; /* color para Mail */
+  --accent-color: var(--accent-color-correo);
+}
+
+.hero__profile__description__social a::before {
+  cursor: pointer;
+  content: attr(data-social);
+  position: absolute;
+  background-color: var(--accent-color);
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  transform: translateY(5em) rotate(-25deg);
+  opacity: 0;
+  transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+}
+
+.hero__profile__description__social a:hover::before {
+  transform: translateY(3.5em) rotate(0);
+  opacity: 1;
+}
+
+.hero__profile__image img {
+  height: 250px;
+  width: auto;
+  align-self: self-end;
+}
+
+.hero__profile__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; /* Esto le da la profundidad 3D */
+  position: relative;
+}
+
+.hero__profile__image .username {
+  display: inline-block;
+  position: absolute;
+  bottom: 0px;
+  left: 60px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.light-mode .hero__profile__image .username {
+  color: #fff;
+  background-color: var(--color-purple);
+}
+
+.dark-mode .hero__profile__image .username {
+  color: #000;
+  background-color: var(--color-neon-green);
+}
+
+@media (min-width: 900px) {
+  .hero__profile {
+    flex-direction: row;
+    gap: 3em;
+    padding: 5em 0;
+  }
+
+  .hero__profile__description {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2px;
+    margin: 0;
+  }
+
+  .hero__profile__description__title {
+    display: block;
+  }
+
+  .hero__profile__description__caption {
+    font-size: 4em;
+    padding: 0;
+    text-transform: none;
+  }
+
+  .hero__profile__description .typewriter {
+    text-align: start;
+    padding: 0;
+  }
+
+  .hero__profile__description__social {
+    gap: 1em;
+  }
+
+  .hero__profile__description__social .relative {
+    font-size: 2em;
+  }
+
+  .hero__profile__image .username {
+    display: none;
+  }
+
+}
+
+/* EFECTO MONEDA DE LA IMAGEN */
+.hero__profile__image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d; /* Mantener la transformación 3D */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero__profile__image img:hover {
+  cursor: pointer;
+}
+
+/* Clase que activa la rotación */
+.hero__profile__image .rotate {
+  transform: rotateY(360deg); /* Hace girar la imagen como una moneda */
+}
+
+/* EFECTO BORDE DE LA IMAGEN */
+.hero__profile__image::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 3px;
+  z-index: -2;
+  animation: spin 4s linear infinite;
+}
+
+.light-mode .hero__profile__image::before {
+  background-image: conic-gradient(
+    var(--color-purple) 0deg,
+    transparent 120deg
+  );
+}
+
+.dark-mode .hero__profile__image::before {
+  background-image: conic-gradient(
+    var(--color-neon-green) 0deg,
+    transparent 120deg
+  );
+}
+
+.hero__profile__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 0;
+  background-color: rgba(0, 0, 0);
+  z-index: -1;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

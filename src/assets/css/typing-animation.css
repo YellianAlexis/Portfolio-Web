@@ -1,0 +1,44 @@
+/* EFECTO DE ESCRITURA */
+@media (min-width: 900px) {
+  .typewriter {
+    max-width: fit-content;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    letter-spacing: 0.075em;
+    animation: typing 4s steps(30, end) 2 alternate,
+      blink-caret 0.5s step-end infinite;
+  }
+}
+
+/* ANIMACIÓN DE EFECTO DE ESCRITURA */
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  5% {
+    width: 0;
+  }
+
+  80% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+/* EFECTO DEL CURSOR EN EL TYPEWRITER */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: orange;
+  }
+}

@@ -1,0 +1,249 @@
+@font-face {
+  font-family: "Source Code Pro";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(./assets/fonts/SourceCodePro.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Jersey";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: url(./assets/fonts/Jersey10.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Monaco";
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  src: local("Monaco"), url(./assets/fonts/Monaco.ttf) format("truetype");
+}
+
+body {
+  font-family: "Source Code Pro", "Courier New", Courier, monospace;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+
+  --color-neon-green: #39ff14;
+  --color-purple: rebeccapurple;
+}
+
+section.optimized {
+  content-visibility: auto;
+	contain-intrinsic-size: 0 800px;
+}
+
+p {
+  max-width: 75ch;
+}
+
+h2 {
+  font-family: "Monaco";
+  font-size: 4em;
+}
+
+/* ANIMACIÓN SLIDE CAMBIO DE MODO (DARK-LIGHT) */
+::view-transition{
+  pointer-events: none;
+}
+
+@property --column-one {
+  inherits: true;
+  initial-value: 0;
+  syntax: "<number>";
+}
+
+@property --column-two {
+  inherits: true;
+  initial-value: 0;
+  syntax: "<number>";
+}
+
+@property --column-three {
+  inherits: true;
+  initial-value: 0;
+  syntax: "<number>";
+}
+
+@property --column-four {
+  inherits: true;
+  initial-value: 0;
+  syntax: "<number>";
+}
+
+@property --column-five {
+  inherits: true;
+  initial-value: 0;
+  syntax: "<number>";
+}
+
+@keyframes one {
+  from {
+    --column-one: 100;
+  }
+}
+
+@keyframes two {
+  from {
+    --column-two: 100;
+  }
+}
+
+@keyframes three {
+  from {
+    --column-three: 100;
+  }
+}
+
+@keyframes four {
+  from {
+    --column-four: 100;
+  }
+}
+
+@keyframes five {
+  from {
+    --column-five: 100;
+  }
+}
+
+::view-transition-new(root) {
+  clip-path: polygon(
+    /*	1st column */ 0 100%,
+    0 calc(var(--column-one) * 1%),
+    20% calc(var(--column-one) * 1%),
+    20% 100%,
+    /*	2nd column */ 20% 100%,
+    20% calc(var(--column-two) * 1%),
+    40% calc(var(--column-two) * 1%),
+    40% 100%,
+    /*	3rd column */ 40% 100%,
+    40% calc(var(--column-three) * 1%),
+    60% calc(var(--column-three) * 1%),
+    60% 100%,
+    /*	4th column */ 60% 100%,
+    60% calc(var(--column-four) * 1%),
+    80% calc(var(--column-four) * 1%),
+    80% 100%,
+    /*	5th column */ 80% 100%,
+    80% calc(var(--column-five) * 1%),
+    100% calc(var(--column-five) * 1%),
+    100% 100%
+  );
+  --speed: 0.625;
+  --columns: 5;
+  animation: one calc(var(--speed) * 1s)
+      calc(sin((0 / 5) * 45deg) * var(--speed) * 1s),
+    two calc(var(--speed) * 1s) calc(sin((1 / 5) * 45deg) * var(--speed) * 1s),
+    three calc(var(--speed) * 1s) calc(sin((2 / 5) * 45deg) * var(--speed) * 1s),
+    four calc(var(--speed) * 1s) calc(sin((3 / 5) * 45deg) * var(--speed) * 1s),
+    five calc(var(--speed) * 1s) calc(sin((4 / 5) * 45deg) * var(--speed) * 1s);
+  animation-fill-mode: both;
+  animation-timing-function: linear(
+    0 0%,
+    0.0027 3.64%,
+    0.0106 7.29%,
+    0.0425 14.58%,
+    0.0957 21.87%,
+    0.1701 29.16%,
+    0.2477 35.19%,
+    0.3401 41.23%,
+    0.5982 55.18%,
+    0.7044 61.56%,
+    0.7987 68.28%,
+    0.875 75%,
+    0.9297 81.25%,
+    0.9687 87.5%,
+    0.9922 93.75%,
+    1 100%
+  );
+  z-index: 2;
+}
+::view-transition-old(root){
+  animation: none;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes scaleUp {
+	from {
+		transform: scale(0.8);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+/* Scroll-Driven Animations */
+.fade-in {
+	view-timeline-name: --fade;
+	view-timeline-axis: block;
+	animation: fadeIn linear;
+	animation-timeline: view();
+	animation-range: entry 25% cover 50%;
+}
+
+.slide-in-left {
+	view-timeline-name: --slide-left;
+	view-timeline-axis: block;
+	animation: slideInLeft linear;
+	animation-timeline: view();
+	animation-range: entry 25% cover 50%;
+}
+
+.slide-in-right {
+	view-timeline-name: --slide-right;
+	view-timeline-axis: block;
+	animation: slideInRight linear;
+	animation-timeline: view();
+	animation-range: entry 25% cover 50%;
+}
+
+.scale-up {
+	view-timeline-name: --scale;
+	view-timeline-axis: block;
+	animation: scaleUp linear;
+	animation-timeline: view();
+	animation-range: entry 25% cover 50%;
+}
