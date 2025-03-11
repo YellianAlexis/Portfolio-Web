@@ -47,7 +47,7 @@ export default function Experience() {
         <h2>Experiencia</h2>
         <Timeline position={isMobile ? "right" : "alternate"} sx={{ padding: "0 15px", margin: '0', width: '90%' }}>
           {items.map((item, index) => (
-            <TimelineItem key={index} >
+            <TimelineItem key={index} sx={ isMobile ? {display: "block", justifyItems: "center", padding: "30px 0", borderTop: `1px solid ${bgColor}`} : {display: "flex"} }>
               <TimelineOppositeContent
                 sx={{
                   m: "auto 0",
