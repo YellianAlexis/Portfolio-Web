@@ -133,6 +133,7 @@
   transform: translateY(5em) rotate(-25deg);
   opacity: 0;
   transition: 200ms cubic-bezier(0.42, 0, 0.44, 1.68);
+  box-sizing: content-box;
 }
 
 .hero__profile__description__social a:hover::before {
@@ -250,6 +251,8 @@
   padding: 3px;
   z-index: -2;
   animation: spin 4s linear infinite;
+  box-sizing: content-box;
+
 }
 
 .light-mode .hero__profile__image::before {
@@ -275,6 +278,7 @@
   padding: 0;
   background-color: rgba(0, 0, 0);
   z-index: -1;
+  box-sizing: content-box;
 }
 
 @keyframes spin {
