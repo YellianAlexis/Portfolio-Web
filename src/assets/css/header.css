@@ -1,11 +1,16 @@
 /* Estilos generales para el header */
 .header__menu {
-  width: 100vw;
+  width: 100dvw; 
   height: auto;
   top: 0;
   margin: 0;
   padding: 0;
 }
+
+.header__menu svg {
+  box-sizing: unset;
+}
+
 
 /* Íconos del menú hamburguesa */
 .header__menu__mobile__icon {
@@ -54,7 +59,7 @@
   position: fixed;
   top: 0;
   width: 250px; /* Ancho del menú en móviles */
-  height: 100vh; /* El menú ocupa toda la altura de la pantalla */
+  height: 100dvh; /* El menú ocupa toda la altura de la pantalla */
   background-color: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(4px);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
@@ -83,7 +88,7 @@
 }
 
 .header__menu__list .sound-icon {
-  margin-left: 60%;
+  margin-left: 50%;
 }
 
 .header__menu__list .light-icon {

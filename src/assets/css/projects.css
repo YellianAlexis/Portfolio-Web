@@ -7,11 +7,13 @@
 
 .projects__container__tabs {
   display: block;
-  width: 90vw;
+  width: 90dvw;
   max-width: 1200px;
   margin: 0 auto;
   border-bottom: 1px solid #ccc;
   border-top: none;
+  justify-items: center;
+  align-content: center;
 }
 
 .projects__container__tabs .tab {
@@ -77,6 +79,7 @@
   width: 100%;
   padding: 50px 0;
   box-sizing: border-box;
+  justify-content: center;
 }
 
 .project__tabContent__card {
@@ -112,6 +115,7 @@
 .project__tabContent__card__title {
   font-size: 1.5rem;
   margin: 10px 0 5px;
+  text-wrap-style: balance;
 }
 
 .project__tabContent__card__subtitle {
