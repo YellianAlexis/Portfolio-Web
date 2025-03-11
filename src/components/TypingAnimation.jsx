@@ -6,8 +6,9 @@ const TypingAnimation = () => {
     "Holaa, te doy la bienvenida a mi portafolio!",
     "Llevo +4 años en el mundo del desarrollo web.",
     "Desarrollando webs con Prestashop y Wordpress.",
-    "También conozco de diseño gráfico y marketing digital.",
-    "Me gusta seguir formándome y aprendiendo."
+    "Ahora también con frameworks como React o Astro.",
+    "Tengo conocimentos de diseño gráfico y marketing digital.",
+    "Y mis objetivos son seguir formándome y actualizándome."
   ];
 
   const [textIndex, setTextIndex] = useState(0);
