@@ -6,11 +6,22 @@ import { LiaLaptopCodeSolid } from "react-icons/lia";
 
 const experiencias = [
   {
+    icon: <BsBriefcaseFill />,
+    title: "2025 - Actualidad",
+    cardTitle:
+      "Responsable de Departamento: Desarrollador Web. Grupo 3A Machine S.L.",
+    cardCaption:
+      "Funciones: Creación, diseño y desarrollo del sitio web y gestión de los contenidos de la misma.",
+    cardDetailedText:
+      "Desarrollo Web. Creación del sitio web desde cero utilizando Wordpress. Añadiendo CSS y JavaScript para diseñar y mejorar la interfaz de usuario, incluyendo la gestión y creación de plugins y temas. Optimización de la velocidad de carga y el rendimiento del sitio.",
+  },
+  {
     icon: <LiaLaptopCodeSolid />,
-    title: "2024 - Actualidad",
+    title: "2024 - 2025",
     cardTitle:
       "FrontEnd Web Developer: Realización de cursos, primeros proyectos y webs usando Frameworks como React. Freelance.",
-    cardCaption: "Funciones: Creación, diseño y desarrollo de sitios web y diferentes proyectos con react.",
+    cardCaption:
+      "Funciones: Creación, diseño y desarrollo de sitios web y diferentes proyectos con react.",
     cardDetailedText:
       "Desarrollo Frontend. Creación de sitios web desde cero, primeros pasos con frameworks como React, utilizando CSS y JavaScript para diseñar y mejorar la interfaz de usuario, teniendo como resultado, aplicaciones web interactivas y responsivas. Implementación de librerías y apis de terceros para mejorar la funcionalidad y la experiencia de usuario. Optimización de la velocidad de carga y el rendimiento de los sitios web.",
   },
@@ -35,8 +46,7 @@ const experiencias = [
   {
     icon: <PiStudentBold />,
     title: "2020",
-    cardTitle:
-      "Desarrollador web. Freshcommerce (Contrato de prácticas)",
+    cardTitle: "Desarrollador web. Freshcommerce (Contrato de prácticas)",
     cardCaption:
       "Funciones: Familiarización con PrestaShop, adquiriendo un conocimiento profundo para optimizar su utilización y personalización.",
     cardDetailedText:

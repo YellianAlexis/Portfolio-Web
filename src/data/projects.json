@@ -75,6 +75,21 @@
       {
         "id": 8,
         "indice": "desarrollo",
+        "img": "/images/exp/g3a_webHome.webp",
+        "titulo": "GRUPO 3A MACHINE",
+        "resumen": "Desarrollé la página web de G3A Machine, creando contenidos de alta calidad y optimizando la experiencia del usuario. Incluyendo la gestión y creación de plugins y temas, y la optimización de la velocidad de carga y el rendimiento del sitio.",
+        "contenido": [
+          "G3A Machine, es una empresa que me ha permitido llevar a cabo el completo desarrollo de su página web, desde el diseño inicial hasta la maquetación final, asegurando que cada pieza cumpla con las especificaciones técnicas para su publicación.",
+          "He realizado la página web desde cero, asegurando que fuera funcional, atractiva y optimizada. No solo como una plataforma informativa, sino como un canal para impulsar y mejorar la experiencia del usuario. También responsiva para todo tipo de dispositivos.",
+          "Además, he implementado varias estrategias para mejorar el rendimiento y la velocidad de carga del sitio, como la optimización de imágenes, la reducción de recursos y la implementación de plugins y temas para personalizar la apariencia del sitio.",
+          "Así como el SEO, para mejorar la visibilidad del sitio en los motores de búsqueda y aumentar la conversión de visitantes en clientes, potenciando el crecimiento de la empresa. También he jugado un papel clave en la gestión de los contenidos y su organizaciñon, asegurando que se mantenga correctamente estructurado y actualizado.",
+          "En resumen, mi experiencia en G3A Machine me ha permitido seguir desarrollando habilidades tanto, en el diseño web como, en creación y gestión de contenidos, SEO y optimización de la experiencia del usuario, contribuyendo al éxito de la empresa en el sector de la web."
+        ],
+        "enlaceProyecto": "https://https://g3amachine.com"
+      },
+      {
+        "id": 9,
+        "indice": "desarrollo",
         "img": "/images/exp/mdkasa_webHome.webp",
         "titulo": "MDKASA",
         "resumen": "Desarrollé el rebranding y la presencia digital de MDKASA, creando su página web y estrategias de marketing que impulsaron el engagement y crecimiento de la empresa.",
@@ -85,7 +100,7 @@
         "enlaceProyecto": "https://mdkasa.es"
       },
       {
-        "id": 9,
+        "id": 10,
         "indice": "desarrollo",
         "img": "/images/exp/areh_webHome.webp",
         "titulo": "ANTONIO RUIPÉREZ E HIJOS",
@@ -96,7 +111,7 @@
         "enlaceProyecto": "https://arehogar.es"
       },
       {
-        "id": 10,
+        "id": 11,
         "indice": "desarrollo",
         "img": "/images/exp/dcm_webHome.webp",
         "titulo": "DISCANMOBEL",
@@ -108,7 +123,7 @@
         "enlaceProyecto": "https://discanmobel.es"
       },
       {
-        "id": 11,
+        "id": 12,
         "indice": "desarrollo",
         "img": "/images/exp/thc_webHome.webp",
         "titulo": "THAINUI CANARIAS",
@@ -119,7 +134,7 @@
         "enlaceProyecto": "https://thainui.es"
       },
       {
-        "id": 12,
+        "id": 13,
         "indice": "desarrollo",
         "img": "/images/exp/ibericca_webHome.webp",
         "titulo": "FRESHCOMMERCE",
